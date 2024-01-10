@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ежедневник</string>
+    <string name="task_detail_title">Детали задачи</string>
+    <string name="edit_task_title">Редактирование задачи</string>
+    <string name="task_entry_title">Добавить задачу</string>
+    <string name="back_button">Назад</string>
+</resources>
