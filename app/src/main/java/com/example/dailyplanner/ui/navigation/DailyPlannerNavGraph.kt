@@ -27,7 +27,12 @@ fun DailyPlannerNavHost(
         modifier = modifier
     ) {
         composable(route = HomeDestination.route) {
-            HomeScreen()
+            HomeScreen(
+                navigateToTaskEntry = { navController.navigate(TaskEntryDestination.route) },
+                navigateToTaskUpdate = {
+                    navController.navigate("${TaskDetailsDestination.route}/${it}")
+                }
+            )
         }
 
         composable(
@@ -36,7 +41,10 @@ fun DailyPlannerNavHost(
                 type = NavType.IntType
             })
         ) {
-            TaskDetailsScreen()
+            TaskDetailsScreen(
+                navigateToEditItem = { navController.navigate("${TaskEditDestination.route}/$it") },
+                navigateBack = { navController.navigateUp() }
+            )
         }
 
         composable(
@@ -45,11 +53,17 @@ fun DailyPlannerNavHost(
                 type = NavType.IntType
             })
         ) {
-            TaskEditScreen()
+            TaskEditScreen(
+                navigateBack = { navController.popBackStack() },
+                onNavigateUp = { navController.navigateUp() }
+            )
         }
 
         composable(route = TaskEntryDestination.route) {
-            TaskEntryScreen()
+            TaskEntryScreen(
+                navigateBack = { navController.popBackStack() },
+                onNavigateUp = { navController.navigateUp() }
+            )
         }
     }
 }

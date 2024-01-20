@@ -39,8 +39,8 @@ data class TaskUiState(
 
 data class TaskDetails(
     val id: Int = 0,
-    val dateStart: Timestamp = Timestamp(Calendar.getInstance().timeInMillis),
-    val dateFinish: Timestamp = Timestamp(Calendar.getInstance().timeInMillis),
+    val dateStart: Long? = 0,
+    val dateFinish: Long? = 0,
     val name: String = "",
     val description: String = ""
 )

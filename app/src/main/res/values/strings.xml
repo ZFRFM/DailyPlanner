@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">Ежедневник</string>
     <string name="task_detail_title">Детали задачи</string>
-    <string name="edit_task_title">Редактирование задачи</string>
+    <string name="edit_task_title">Редактировать задачу</string>
     <string name="task_entry_title">Добавить задачу</string>
     <string name="back_button">Назад</string>
+    <string name="item_name_req">Название задачи*</string>
+    <string name="item_description">Описание задачи*</string>
+    <string name="save_action">Save</string>
+    <string name="attention">Внимание</string>
+    <string name="delete_question">Вы точно хотите удалить задание?</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="edit_item_title">Редактировать задание</string>
+    <string name="delete">Удалить</string>
+    <string name="item">Задание</string>
+    <string name="description">Описание</string>
+    <string name="date_start">Начало</string>
 </resources>
